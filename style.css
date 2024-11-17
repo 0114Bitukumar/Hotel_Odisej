@@ -1,0 +1,850 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 99;
+    padding: 0 40px;
+}
+#nav1 .line{
+    width: 50px;
+    height: 3px;
+    background-color: #434B34;
+    margin-bottom: 5px;
+}
+ #nav #nav2  button{
+    padding: 7px 15px;
+    font-weight: 600;
+    margin-right: 15px;
+    border: 1px solid #434B34;
+    background-color: transparent;
+    color: #434B34;
+    border-radius: 50px;
+
+ }
+ #nav #nav2 button:nth-last-child(1){
+    background-color: #434B34;
+    color: #fff;
+ }
+#page1{
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    top: 0%;
+    padding-top:0;
+}
+ #page1 svg{
+    scale: 0.8;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+     top: -23%;
+     left: 30%;
+     z-index: 99;
+}
+#page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    
+}
+#page2{
+    min-height: 150vh;
+    background-color: #5B6647;
+    position: relative;
+}
+#page2 #svg1{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#text-container{
+    position: relative;
+    z-index: 9;
+    padding-top: 10vw;
+}
+#text-container h2{
+    font-family: PP woodland;
+    color: #434B34;
+    font-size: 5vw;
+    line-height: 5.5vw;
+    font-weight: 100;
+    text-align: center;
+}
+#text-container h2 span{
+    font-family: PP woodland;
+}
+#page2 #svg2{
+    position: absolute;
+    bottom: -6%;
+    width: 300vw;
+    fill: #5B6647;
+    z-index:9;
+}
+#page2 #svg3{
+    position: absolute;
+    bottom: -10%;
+    left: -50vw;
+    /*transform: translateY(120%); */
+    width: 300vw;
+    fill: #E3E3C4;
+    
+}
+#page3{
+    height: 200vh;
+    width: 100%;
+    background-color:#F7F7EE ;   
+  
+    position: relative;
+}
+#page3 #text{
+    padding-top: 20vw;
+}
+#page3 #text  h1{
+    font-size:80px;
+    font-weight:100;
+    color:#E3E3C4 ;
+    z-index: 9;
+    text-align: center;
+   
+}
+#text h1 span{
+    font-family: PP woodland;
+}
+
+#page3  h2{
+    font-size: 23px;
+    position: absolute;
+    left:8%;
+    top: 41%;
+    color: #434B34; 
+    font-weight: 200;
+  }
+#page3 h3{
+    font-size: 30px;
+    position: absolute;
+    left:8%;
+    top: 52%;
+    color: #434B34;
+    font-weight: 200;
+}
+#page3  i{
+    position: absolute;
+    left: 23%;
+    top: 52%;
+    background-color: #434B34;
+    color: #fff;
+    font-size: x-large;
+    border-radius: 30px;
+    padding:1px 15px;
+    border: 2px solid #434B34;
+}
+#page3 i:hover{
+ font-size:22px;
+      }
+#page3 #img1{
+    position: absolute;
+    left:52%;
+    top: 44%;
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:30px;
+}
+#page3 #img2{
+    position: absolute;
+    left:7%;
+    top: 62%;
+    height: 340px;
+    width: 570px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:20px;
+}
+#page3 #img3{
+    position: absolute;
+    left:52%;
+    top: 76%;
+    height: 300px;
+    width: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:20px;
+}
+#page4 {
+    min-height: 100vh;
+    padding: 13vw 5vw;
+    background-color: #F7F7EE;
+}
+#page4 .elem {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #5B6647;
+    /* background-color: red; */
+    border-top: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+#page4 .elem:nth-child(1) {
+    border-top: 1px solid #5B6647;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#page4 .elem:nth-last-child(1) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.elem-part1 {
+    height: 100%;
+    width: 22%;
+    position: absolute;
+    transition: all ease-out 0.4s;
+    left: 0;
+    transform: translateX(-100%);
+}
+.elem-part1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.elem-part2 {
+    height: 100%;
+    width: 100%;
+    transition: all ease-out 0.4s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #434B34;
+    padding: 2.6vw 4vw;
+}
+.elex-1 h3{
+    margin-bottom: 1vw;
+    font-family: pp woodland;
+    font-size: 2.4vw;
+    font-weight: 100;
+}
+.elex-1 p{
+    font-size: 0.8vw;
+}
+.elex-2 h5{
+    background-color: #5B6647;
+    color: #E3E3C4;
+    padding: 4px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9vw;
+    transition: all ease-out 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.elex-2 h5 i{
+    position: absolute;
+    background-color: #E3E3C4;
+    color: #5B6647;
+    padding:5px 18px;
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+.elem:hover .elem-part2 {
+    width: 78%;
+    background-color: #5B6647;
+    color: #E3E3C4;
+}
+
+.elem:hover .elem-part1 {
+    transform: translateX(0);
+}
+.elem:hover .elex-2 h5{
+    background-color: #E3E3C4;
+    color: #5B6647;
+}
+.elem:hover .elex-2 h5 i{
+    opacity: 1;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: burlywood;
+    position: relative;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide:nth-last-child(1){
+    width: 20%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.6) translateX(-40%) translateY(34%);
+    border-radius: 20px;
+  
+  }
+  .swiper-slide {
+    width: 80%;
+    padding: 60px;
+  }
+  .swiper-slide-active img{
+    transform: scale(1) translateX(0%) translateY(0%);
+  }
+  .swiper-button-next{
+    color: #fff;
+    background-color: #434b34;
+    padding: 5px 20px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  .swiper-button-prev{
+    color: #fff;
+    background-color: #434b34;
+    padding: 5px 20px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+  }
+  
+  .swiper-button-next::after{
+    content: "";
+  }
+  .swiper-button-prev::after{
+    content: "";
+  }
+
+#page6{
+    position: relative;
+   min-height:200vh; 
+   background-color:#03364F;
+   margin-top: 13%;
+}
+#page6 #svgg1{
+    position: absolute;
+    top:-9%;
+    width: 300vw;
+    fill:#E3E3C4 ;
+    rotate: 180deg;
+
+}
+#page6 #svgg2{
+    position: absolute;
+    top:-6%;
+    left: -50vw;
+    /*transform: translateY(120%); */
+    width:300vw;
+    fill:#03364F ;
+    rotate:180deg;
+   
+   }
+   #page6 #text1{
+    padding-top: 8vw;
+    
+}
+#page6 #text1  h1{
+    font-size:80px;
+    font-weight:100;
+    color:#e3e3c49c;
+    z-index: 9;
+    text-align: center;
+   
+}
+#text1 h1 span{
+    font-family: PP woodland;
+}
+#page6 h2{
+    font-size:18px;
+    margin-top:48px;
+    text-align: center;
+    color: #fff;
+}
+#page6 #im1 {
+    height: 280px;
+    width: 302px;
+}
+#im1 img{
+    position: absolute;
+    top:42%;
+    left:4%;
+    object-fit: cover;
+    height: 250px;
+    width: 320px;
+    border-radius: 20px;
+   
+}
+#page6 #im1 h1{
+    font-size: 37px;
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    font-weight: 900;
+    left:4%;
+    text-align: center;
+    
+}
+#page6 #im1 h2{
+    font-size: 16px;
+    font-weight: 400;
+    top:59%;
+    left: 4%;
+    position: absolute;
+}
+#page6 #im2 {
+    height: 250px;
+    width: 320px;
+    
+}
+#im2 img{
+    position: absolute;
+    top:53%;
+    left:46%;
+    border-radius: 20px;
+}
+#page6 #im2 h1{
+    font-size: 37px;
+    color: #fff;
+    position: absolute;
+    top:68%;
+    font-weight: 900;
+    left: 48%;
+    text-align: center;
+    
+}
+#page6 #im2 h2{
+    font-size: 16px;
+    font-weight: 400;
+    top: 69%;
+    left: 44.5%;
+    position: absolute;
+}
+#page6 #im3 {
+    height: 250px;
+    width: 320px;
+}
+#im3 img{
+    position: absolute;
+    top:42%;
+    left: 74%;
+    border-radius: 20px;
+}
+#page6 #im3 h1{
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    font-weight: 900;
+    left:74%;
+    text-align: center;
+    
+}
+#page6 #im3 h2{
+    font-size: 14px;
+    font-weight: 400;
+    top: 59%;
+    left:75%;
+    position: absolute;
+}
+#page6 #svgg3{
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: -10%;
+    width: 230vw;
+    fill:#03364F;
+    z-index: 9;
+    
+}
+#page6 #svgg4{
+    position: absolute;
+    bottom: -10.5%;
+    left: -50vw;
+   width: 230vw;
+    fill: #E3E3C4;
+    }
+    #page7{
+        position: relative;
+       min-height:100vh; 
+       background-color:#F7F7EE;
+       margin-top:10%;
+    } 
+    #page7 #text2{
+        padding-top: 8vw;
+        
+    }
+    #page7 #text2  h1{
+        font-size:80px;
+        font-weight:100;
+        color:#e3e3c49c;
+        z-index: 9;
+        text-align: center;
+       
+    }
+    #text2 h1 span{
+        font-family: PP woodland;
+    }  
+    #page7-1{
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        padding: 5vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #page7-1-left{
+        height: 100%;
+        width: 40%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/230/ALH_Odisej_outsidepool_01-scaled-600x0.jpg);
+        border-radius: 20px;
+        transform: translateX(-10%);
+    
+    }
+    #page7-1-center{
+        
+        width: 50%;
+        border-radius: 20px;
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        padding: 5vw 8vw;
+    
+    
+    }
+    #page7-1-center h1{
+        font-family: PP Woodland;
+        font-size: 5vw;
+        margin-bottom: 4vw;
+        font-weight: 100;
+        color: #5B6647;
+        line-height: 5vw;
+    }
+    #page7-1-center p{
+       font-size: 1.3vw; 
+       font-weight: 500;
+       color: #676767;
+       margin-bottom: 4vw;
+    }
+    #page7-1-right{
+        height: 100%;
+        width: 40%;
+        background-position: center;
+        background-size: cover;
+        background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/388/alh-img-2-600x0.jpeg);
+        border-radius: 20px;
+        transform: translateX(10%);
+    
+    }
+     #page8
+     {
+        height: 100vh;
+        width:100%;
+      }
+      #page8 img{
+        height: 100vh;
+        width:100%;
+        object-fit: cover;
+        object-position:center;
+      }
+      #page9{
+        min-height: 180vh;
+        background-color: #5B6647;
+        position: relative;
+        margin-top:50px;
+    }
+    /*#page9 #svggg1{
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+    }*/
+    #page9 #svggg2{
+        position: absolute;
+        top:-10%;
+        width:200vw;
+        fill:#E3E3C4 ;
+        rotate: 180deg;
+    
+    }
+    #page9 #svggg3{
+        position: absolute;
+        top:-7%;
+        left: -50vw;
+        /*transform: translateY(120%); */
+        width:200vw;
+        fill:#434B34;
+        rotate:180deg;
+       
+       }
+       #page9 #text3{
+        padding-top: 8vw;
+        position: relative;
+        z-index: 9;
+        
+    }
+    #page9 #text3  h1{
+        font-size:80px;
+        font-weight:100;
+        color:#e3e3c49c;
+        text-align: center;
+       
+    }
+    #text3 h1 span{
+        font-family: PP woodland;
+    }  
+    #page9 h2{
+        position: absolute;
+        font-size: 18px;
+        z-index: 9;
+        text-align: center;
+        margin-top:44px;
+        left:33%;
+        color:white;
+        font-weight: 900;
+    }
+    
+    #page9 #im1{
+        height: 350px;
+        width: 380px;
+        background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/326/ALH_Hotel_Supetar_Cavtat_Pool26-800x0.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top:63%;
+        left:10%;
+        border-radius: 20px;
+    }
+    #page9 #im2{
+        height: 710px;
+        width: 440px;
+       position: absolute;
+        top:34%;
+        left:37%;
+        background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/324/ALH_Hotel_Supetar_Cavtat_Pool18-800x0.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+    #page9 #im3{
+        height: 350px;
+        width: 380px;
+        position: absolute;
+        top: 34%;
+        left: 68%;
+        background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/322/ALH_Hotel_Supetar_Cavtat_Pool17-800x0.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+    
+     #page10{
+        height: 250vh;
+        width: 100%;
+        background-color:#F7F7EE;
+        position: relative;
+     }
+     #page10 #text4{
+        padding-top: 10vw;
+        
+    }
+    #page10 #text4  h1{
+        font-size:80px;
+        font-weight:100;
+        color:#e3e3c49c;
+        z-index: 9;
+        text-align: center;
+       
+    }
+    #text4 h1 span{
+        font-family: PP woodland;
+    }  
+    #page10 h2{
+        font-size: 16px;
+        font-weight:300;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    #page10 img{
+        height: 550px;
+        width: 540px;
+        object-fit: cover;
+        object-position: center;
+        margin-left: 80px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    #page10 h4{
+        font-size:40px;
+        position: absolute;
+        font-weight: 500;
+        color: #434B34;
+        text-align: center;
+        top:34%;
+        left: 59%;
+       
+    }
+    #page10 h3{
+        font-size:16px;
+        position: absolute;
+        font-weight: 300;
+        color:#434b34;
+        text-align:start;
+        top:37%;
+        left:59%;
+        
+    } 
+    #page10 h5{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        top:44%;
+        left:59%;
+        color: #434b34;
+        position: absolute;
+    }
+    #page10  i{
+        position: absolute;
+        left:71%;
+        top:44%;
+        background-color: #434B34;
+        color: #fff;
+        font-size:x-large;
+        border-radius:30px;
+        padding:1px 15px;
+        border: 1px solid #434B34;
+    }
+    #page10 i:hover{
+     font-size:22px;
+          }
+    #page10 #text5 h4{
+        font-size: 28px;
+        position:absolute;
+        top:69%;
+        left: 28%;
+        color:#4e563f;
+        text-align: start;
+    }      
+    #page10 #text5 h2{
+        font-size: 16px;
+        position: absolute;
+        top:72%;
+        left: 28%;
+        text-align: start;  
+        color: #434B34;
+
+    }  
+    #page10 #text5 h5{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        top:84%;
+        left:28%;
+        color: #434b34;
+        position: absolute;
+    }
+    #page10 #text5 i{
+        position: absolute;
+        left:41%;
+        top: 84%;
+        background-color: #434B34;
+        color: #fff;
+        font-size:x-large;
+        border-radius:30px;
+        padding:1px 15px;
+        border: 1px solid #434B34;
+    }
+    #page10 #text5 i:hover{
+     font-size:22px;
+          }   
+    #page10 #text5 img{
+        height:570px;
+        width:500px;
+        position: absolute;
+        left: 57%;
+        top:50%;
+    }
+    #page11{
+        height: 130vh;
+        width: 100%;
+        position: relative;
+    }
+    #page11 img{
+        height:130vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #page11 #text6 {
+        height:170px;
+        width: 87%;
+        border-radius: 20px;
+        background-color:#5B6647;
+        z-index: 999;
+        position: absolute;
+        top:70%;
+        left:7%;
+    }
+    #page11 #text6 h3{
+        font-size:45px;
+        position: absolute;
+        top:30%;
+        left: 10%;
+        color: white;
+    }
+    #page11 #text6 h5{
+        font-size:25px;
+        position: absolute;
+        top: 39%;
+        left: 77%;
+        color: white;
+    }
+#page11 #text6 i{
+    position: absolute;
+    left:91%;
+    top:39%;
+    background-color:white;
+    color:#434b34e1;
+    font-size:x-large;
+    border-radius:30px;
+    padding:1px 15px;
+    border: 1px solid #434B34;
+    
+}
+#page11 #text6 i:hover{
+ font-size:22px;
+      }
